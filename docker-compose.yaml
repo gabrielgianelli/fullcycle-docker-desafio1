@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+
+  app:
+    build: 
+      context: golang
+    container_name: app_golang
+    image: gabrielgianelli/codeeducation
+    volumes: 
+      - ./golang:/go/src/app
